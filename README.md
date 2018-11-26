@@ -1,1 +1,1 @@
-# django-realtime-cookie
+# django-hotlivereload-cookie
