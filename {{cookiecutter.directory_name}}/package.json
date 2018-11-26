@@ -1,0 +1,25 @@
+{
+  "name": "{{cookiecutter.project_name}}",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build:prod": "webpack --config webpack.prod.js --mode production",
+    "build:dev": "webpack --config webpack.dev.js --mode development"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
+    "friendly-errors-webpack-plugin": "*",
+    "mini-css-extract-plugin": "*",
+    "node-sass": "*",
+    "path": "*",
+    "postcss-loader": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-bundle-tracker": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*",
+    "webpack-merge": "*"
+  }
+}

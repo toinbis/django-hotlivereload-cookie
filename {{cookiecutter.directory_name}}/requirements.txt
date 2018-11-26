@@ -1,0 +1,8 @@
+django
+django-livereload-server
+django-webpack-loader
+django-environ
+#psycopg2-binary
+#django-lockdown
+#gunicorn
+#django-debug-toolbar

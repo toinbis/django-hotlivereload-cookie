@@ -1,0 +1,11 @@
+venv
+*.pyc
+staticfiles
+.env
+*.sqlite3
+node_modules/
+yarn-error.log
+webpack-stats.json
+assets/
+.idea
+.vscode
