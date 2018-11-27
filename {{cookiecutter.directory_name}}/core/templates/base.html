@@ -6,73 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="BestCMS.io - 78 content management systems reviewed">
-    <meta name="keywords" content="Storyblock, Contentful">
-
-    <link rel="stylesheet" href="{% static "styles/bootstrap.css" %}" media="screen" />
-    <link rel="stylesheet" href="{% static "styles/icoMoon.css" %}" media="all" />
-    <link rel="stylesheet" href="{% static "styles/superfish.css" %}" media="screen" />
-    <link rel="stylesheet" href="{% static "styles/flexslider.css" %}" media="screen" />
-    <link rel="stylesheet" href="{% static "styles/prettyPhoto.css" %}" media="screen" />
-    <link rel="stylesheet" href="{% static "styles/responsive.css" %}" >
-
     <link rel="stylesheet" href="{% static "styles/style.css" %}">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-
-    {% comment %} <!--[if lt IE 9]>
-            <script src="js/html5shiv.js"></script>
-            <script src="js/respond.min.js"></script>
-            <script src="js/css3-mediaqueries"></script>
-            <link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />
-			<script src="js/PIE_IE678.js"></script>
-    <![endif]--> {% endcomment %}
-
-    <link rel="stylesheet" href="{% static "styles/ie.css" %}" type="text/css" media="all" />
-
-
-    <!-- Le fav and touch icons -->
-    <link rel="icon" type="image/x-icon" href="{% static "images/favicon.ico" %}">
-    <link rel="apple-touch-icon" href="{% static "images/apple-touch-icon.png" %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static "images/apple-touch-icon-72x72.png" %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static "images/apple-touch-icon-114x114.png" %}">
-
-
-
-
-
-    {% comment %} {% include "_favicons.html" %} {% endcomment %}
-
     <title>{% block title %}{% endblock title %}</title>
-    {% comment %} {% render_bundle 'main' 'css'%}
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> {% endcomment %}
+    {% render_bundle 'main' 'css'%}
   </head>
-
   <body>
     <div class="wrapper">
-
-    {% comment %} {% include "_favicons.html" %} {% endcomment %}
       {% block content %}{% endblock content %}
-    {% comment %} {% render_bundle 'main' 'js'%} {% endcomment %}
-
-
-  </div><!-- wrapper -->
-
-
-  <script src="{% static "js/jquery-1.10.2.min.js" %}"></script>
-  <script src="{% static "js/superfish.js" %}"></script>
-  <script src="{% static "js/retina.js" %}"></script>
-  <script src="{% static "js/bootstrap.min.js" %}"></script>
-  <script src="{% static "js/jquery.flexslider-min.js" %}"></script>
-  <script src="{% static "js/jquery.carouFredSel-6.2.1-packed.js" %}"></script>
-  <script src="{% static "js/jquery.prettyPhoto.js" %}"></script>
-  <script src="{% static "js/jquery.validate.min.js" %}"></script>
-  <script src="{% static "js/jquery.form.js" %}"></script>
-  <script src="{% static "js/jquery.mousewheel.js" %}"></script>
-  <script src="{% static "js/modernizr-transitions.js" %}"></script>
-  <script src="{% static "js/jquery.masonry.min.js" %}"></script>
-  <script src="{% static "js/jquery.isotope.min.js" %}"></script>
-  <script src="{% static "js/custom.js" %}" charset="utf-8"></script>
-
+    </div><!-- wrapper -->
+   {% render_bundle 'main' 'js'%}
+   <img src="{% static 'images/grumpy.png'%}">
   </body>
 </html>

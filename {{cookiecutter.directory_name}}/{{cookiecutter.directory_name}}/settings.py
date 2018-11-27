@@ -40,18 +40,18 @@ INSTALLED_APPS = [
     # Disable Django's own staticfiles handling in favour of WhiteNoise, for
     # greater consistency between gunicorn and `./manage.py runserver`. See:
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
-    #'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     #Order of below apps is important for proper functionality of 
     'livereload',
     'django.contrib.staticfiles',
     'core',
     'webpack_loader',
-    #'lockdown',
-    #'debug_toolbar',
+    'lockdown',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
-    #'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -60,8 +60,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'livereload.middleware.LiveReloadScript',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
-    #'lockdown.middleware.LockdownMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'lockdown.middleware.LockdownMiddleware',
 ]
 
 ROOT_URLCONF = '{{cookiecutter.project_name}}.urls'

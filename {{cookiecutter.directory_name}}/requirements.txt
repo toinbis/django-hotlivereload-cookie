@@ -4,5 +4,6 @@ django-webpack-loader
 django-environ
 psycopg2-binary
 gunicorn
-#django-lockdown
-#django-debug-toolbar
+django-lockdown
+django-debug-toolbar
+whitenoise

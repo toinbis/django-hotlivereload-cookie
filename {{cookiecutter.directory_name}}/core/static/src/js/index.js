@@ -1,5 +1,4 @@
 import "./../styles/main.scss";
-//import "bootstrap";
 
 import createComponent from "./component";
 
