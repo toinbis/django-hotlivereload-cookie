@@ -1,0 +1,18 @@
+body {
+  padding-top: 100px; 
+  //font-family: sans-serif;
+  background: rgb(100, 105, 23);
+}
+
+.navbar {
+  min-height: 100px;
+  background-color: yellow;
+}
+
+.navbar-brand>img {
+   max-height: 100px;
+   width: 158px;
+   margin-left: 100px;
+}
+
+//@import "~bootstrap/scss/bootstrap";

@@ -2,7 +2,7 @@ django
 django-livereload-server
 django-webpack-loader
 django-environ
-#psycopg2-binary
+psycopg2-binary
+gunicorn
 #django-lockdown
-#gunicorn
 #django-debug-toolbar

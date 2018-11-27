@@ -1,4 +1,7 @@
 {
-  "directory_name": "Hello",
-  "project_name": "Hello"
+  "directory_name": "ProjectDirectory",
+  "project_name": "ProjectName",
+  "_copy_without_render": [
+    "*.html"
+  ] 
 }
