@@ -7,3 +7,4 @@ gunicorn
 django-lockdown
 django-debug-toolbar
 whitenoise
+dj-database-url

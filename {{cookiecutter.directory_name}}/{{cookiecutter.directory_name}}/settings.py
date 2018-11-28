@@ -9,7 +9,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-#import dj_database_url
+import dj_database_url
 #import django_heroku
 
 import os
@@ -89,14 +89,7 @@ WSGI_APPLICATION = '{{cookiecutter.project_name}}.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_USER_PASSWORD'),
-        'HOST': env('DATABASE_HOST'),
-        'PORT': env('DATABASE_PORT'),
-    }
+    'default': dj_database_url.config(default=env('DATABASE_URL')),
 }
 
 AUTH_PASSWORD_VALIDATORS = [
